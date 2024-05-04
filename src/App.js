@@ -1,11 +1,11 @@
-import './App.css';
+import "./App.css";
+import { ExchangesPage } from "./pages/ExchangesPage/ExchangesPage";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-<h1>Старий бля буду гаманець не найобка1</h1>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<ExchangesPage></ExchangesPage>}></Route>
+    </Routes>
   );
 }
 
