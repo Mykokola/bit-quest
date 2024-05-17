@@ -1,0 +1,43 @@
+.theaters {
+  margin-top: 30px;
+}
+
+.theaters_title {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.theaters_listItem {
+  color: #000;
+  font-family: Petrona;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  display: flex;
+}
+
+.theaters_listItem::before {
+  content: "•";
+  color: #000;
+  font-size: smaller;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .theaters_list {
+    column-count: 2;
+  }
+
+  .theaters_listItem,
+  .theaters_title {
+    font-size: 25px;
+  }
+}

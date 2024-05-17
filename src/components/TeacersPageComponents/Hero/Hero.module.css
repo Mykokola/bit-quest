@@ -1,0 +1,6 @@
+.heroSection{
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

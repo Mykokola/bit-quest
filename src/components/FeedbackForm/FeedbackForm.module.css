@@ -1,0 +1,187 @@
+.sign_up {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.sign_up_title {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.sign_up_form_title {
+  color: #fff;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.sign_up_form {
+  background-image: url(../../images/sign_up/sign_up_1280_1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 28px;
+  padding-bottom: 44px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .sign_up_form {
+    background-image: url(../../images/sign_up/sign_up_1280_2x.jpg);
+  }
+}
+.sign_up_form input,
+.sign_up_form label,
+.sign_up_form textarea {
+  box-sizing: border-box;
+}
+
+.sign_up_form input,
+.sign_up_form textarea {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "SeoulHangang_CL", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+}
+
+.sign_up_form input {
+  padding: 4px 8px;
+  height: 40px;
+}
+
+.sign_up_form textarea {
+  padding: 9px 8px;
+  height: 112px;
+}
+
+.button {
+  width: 156px;
+  margin: 20px auto 0;
+}
+.hidden {
+  display: none;
+}
+
+.sign_up_backdrop {
+  /* width: 100%; */
+  /* height: 464px; */
+  padding-top: 125px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 201px;
+  background-image: url(../../images/sign_up/sign_up_cover_1280_1x.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .sign_up_backdrop {
+    background-image: url(../../images/sign_up/sign_up_cover_1280_2x.jpg);
+  }
+}
+
+.navLogo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  display: block;
+}
+
+.sign_up_cover_title {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 768px) {
+  .sign_up_form {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 139px;
+    padding-bottom: 174px;
+  }
+  .sign_up_form_title {
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
+
+  .sign_up_form input {
+    /* padding: 12px 24px; */
+    height: 80px;
+  }
+
+  .sign_up_form textarea {
+    height: 222px;
+  }
+
+  .button {
+    width: 224px;
+  }
+  .sign_up_cover_title {
+    font-size: 25px;
+  }
+
+  .sign_up_backdrop {
+    padding-top: 343px;
+    padding-bottom: 451px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .navLogo {
+    width: 101px;
+    height: 82.456px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sign_up_form {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+  .sign_up_backdrop {
+    padding-top: 293px;
+    padding-bottom: 447px;
+    padding-left: 324px;
+    padding-right: 324px;
+  }
+
+  .sign_up_cover_title {
+    font-size: 25px;
+  }
+
+  .navLogo {
+    width: 151px;
+    height: 132.456px;
+  }
+}

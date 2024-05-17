@@ -1,0 +1,258 @@
+.no-scroll {
+  overflow: hidden;
+}
+#paddingFix {
+  padding: 0;
+}
+.header {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+.navRouteList,
+.navContactsList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.open_close_btn,
+.navigationMobile,
+.backdrop {
+  display: none;
+}
+
+.navWrapper {
+  height: 66px;
+  display: flex;
+  align-items: center;
+}
+
+.navLogo,
+.navLogoMobile {
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  fill: inherit;
+}
+
+.navName,
+.navNameMobile,
+.navRouteList {
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navName {
+  font-size: 15px;
+}
+
+.navContactsList {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navContactsLink span {
+  padding-left: 5px;
+  text-align: center;
+  font-family: Petrona;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: normal;
+  font-style: normal;
+}
+
+.navContactsLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transparentHeader {
+  fill: #fff;
+  color: #fff;
+}
+.whiteHeader {
+  fill: #000;
+  color: #000;
+  background-color: #fff;
+}
+
+.combineHeader {
+  fill: #000;
+  color: #000;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+  .navWrapper {
+    width: 100%;
+  }
+  .open_close_btn {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    top: 23px;
+    border: 0;
+    background-color: transparent;
+    z-index: 5;
+  }
+
+  .navigation {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #fff;
+  }
+
+  .navigationMobile {
+    height: 66px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #000;
+    fill: #000;
+  }
+  .backdrop {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.292);
+    position: fixed;
+    inset: 0;
+  }
+
+  .navRouteList a {
+    font: 200 20px Petrona;
+    line-height: normal;
+    padding: 15px 11px;
+    display: block;
+  }
+  .navLinkItem:first-child {
+    border-top: 0.5px solid #000;
+  }
+  .navLinkItem,
+  .navContactsList {
+    border-bottom: 0.5px solid #000;
+  }
+
+  .navLink,
+  .navContactsLink {
+    color: #000;
+    fill: #000;
+  }
+  .navContactsLink {
+    padding-top: 25px;
+    padding-bottom: 31px;
+  }
+  .currentPageWhite {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .currentPageBlack {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  .currentPage {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navLogo {
+    width: 91.2px;
+    height: 80px;
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+
+  .navName {
+    margin-left: 13px;
+    margin-right: 0;
+  }
+
+  .navWrapper {
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    height: 99px;
+    margin-top: 44px;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 15px;
+  }
+  .navLink,
+  .navContactsLink {
+    color: inherit;
+    fill: inherit;
+  }
+
+  .navRouteList {
+    display: flex;
+    gap: 15px;
+  }
+
+  .navName,
+  .navNameMobile,
+  .navRouteList {
+    font-size: calc(6px + 1vw);
+  }
+  /* .currentPage {
+    text-decoration: underline;
+    color: #fff;
+  } */
+  .combineHeader {
+    fill: #fff;
+    color: #fff;
+    background-color: transparent;
+  }
+
+  .currentPageBlack {
+    text-decoration: underline;
+    color: #000;
+  }
+  .currentPageWhite {
+    text-decoration: underline;
+    color: #fff;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navName,
+  .navNameMobile,
+  .navRouteList {
+    font-size: 18px;
+  }
+
+  .navigation,
+  .navRouteList {
+    gap: 66px;
+  }
+  .currentPage {
+    color: red;
+  }
+  .combineHeader {
+    fill: #fff;
+    color: #fff;
+    background-color: transparent;
+  }
+}

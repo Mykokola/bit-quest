@@ -1,0 +1,49 @@
+.title {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 15px;
+  line-height: normal;
+}
+.teachersSection {
+  padding-top: 63px;
+}
+.teachersList {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  gap:30px;
+}
+.teachersListItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.teacherHistory{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.teachersListItem h3 {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 15px;
+  line-height: normal;
+  opacity: 0.6;
+  max-width: 320px;
+}
+
+ p {
+    max-width: 320px;
+    color: #000;
+font-family: Petrona;
+font-size: 18px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+}

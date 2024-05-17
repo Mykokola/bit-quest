@@ -1,0 +1,55 @@
+.aboutTraning {
+  padding-top: 43px;
+}
+.aboutTraningTitle {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 112%; /* 16.8px */
+  letter-spacing: 0.45px;
+  max-width: 320px;
+  margin: 0 auto;
+
+}
+.aboutTrainingList {
+    color: #000;
+    font-family: Petrona;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    margin-top: 15px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    list-style-type: none; /* Встановлює тип маркера у вигляді диска (точки) */
+}
+.aboutTrainingItem{
+    position: relative; /* Відносне позиціонування для псевдоелемента */
+    padding-left: 15px; 
+    max-width:320px;
+}
+
+.aboutTrainingItem::before {
+    content: ''; /* Псевдоелемент для маркера */
+    position: absolute; /* Абсолютне позиціонування псевдоелемента */
+    left: 0; /* Розміщення псевдоелемента зліва */
+    top: 10px; /* Вирівнювання по вертикалі до середини рядка */
+    transform: translateY(-50%); /* Вирівнювання по вертикалі */
+    width: 2.5px; /* Ширина маркера */
+    height: 2.5px; /* Висота маркера */
+    background-color: black; /* Колір маркера */
+    border-radius: 50%; /* Робимо маркер круглим */
+}
+.aboutTrainingListTitle{
+    margin-top: 13px;
+    color: #000;
+    font-family: Petrona;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}

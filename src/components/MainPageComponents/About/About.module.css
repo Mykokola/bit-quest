@@ -1,0 +1,65 @@
+.about {
+  margin-top: 50px;
+}
+
+.about_title {
+  color: #000;
+  text-align: center;
+  font-family: Cinzel;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+}
+
+.about_info {
+  color: #000;
+  font-family: Petrona;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 115%; /* 20.7px */
+  text-align: justify;
+}
+
+.about_button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: #000;
+  font-family: Cinzel;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 115%; /* 23px */
+}
+
+.about_button span {
+  text-transform: uppercase;
+}
+.about_button:hover {
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 2px 15px rgba(0, 0, 0, 0.25);
+}
+
+.navLogoMobile {
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+
+@media screen and (min-width: 1200px) {
+  .about_title {
+    display: block;
+  }
+  .about_button {
+    font-size: 20px;
+  }
+  .about_info {
+    font-size: 20px;
+  }
+}
